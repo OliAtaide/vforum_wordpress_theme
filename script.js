@@ -175,6 +175,8 @@ $(function () {
     });
 });
 
+// Titulo Organizacao
+
 $(window).scroll(function () {
     var scroll_position = $(window).scrollTop();
     var field_top = $('.ondas2').position().top - ($(window).height() / 2);
