@@ -106,14 +106,13 @@ $(function () {
     });
 });
 
-// Ondas
+// Header
 
 $(function () {
     $(window).scroll(function () {
         var scroll_position = $(window).scrollTop();
         var field_top = 0;
         var field_bottom = ($(window).height() / 4);
-        console.log(field_bottom);
         var ib = 180;
 
         if (scroll_position > field_top && scroll_position < field_bottom) {
@@ -133,7 +132,7 @@ $(function () {
             })
         }
 
-        $('.ondas img').each(function (i, onda) {
+        $('.header-ondas img').each(function (i, onda) {
             if (scroll_position > field_top && scroll_position < field_bottom) {
                 var object_position_x = (scroll_position - field_top) * ($(this).width() - $(window).width()) / (field_bottom - field_top);
                 var object_position_y = (scroll_position - field_top) * ib / (field_bottom - field_top);
@@ -152,10 +151,10 @@ $(function () {
                 }
             }
             else if (scroll_position < field_top) {
-                $('.onda1, .onda3, .onda5').css({
+                $('.header-ondas .onda1, .header-ondas .onda3, .header-ondas .onda5').css({
                     'left': '0',
                 });
-                $('.onda2, .onda4, .onda6').css({
+                $('.header-ondas .onda2, .header-ondas .onda4, .header-ondas .onda6').css({
                     'right': '0',
                 });
             }
@@ -175,3 +174,30 @@ $(function () {
         });
     });
 });
+
+$(window).scroll(function () {
+    var scroll_position = $(window).scrollTop();
+    var field_top = $('.ondas2').position().top - ($(window).height() / 2);
+    var field_bottom = $('.ondas2').position().top;
+    var ib = 180;
+
+    if (scroll_position > field_top && scroll_position < field_bottom) {
+        var pos = scroll_position - field_top;
+        var area = field_bottom - field_top;
+        console.log(pos, area);
+        var object_margin_top = (150 * pos) / ($(window).height() / 2);
+        $('.sol').css({
+            "top": object_margin_top - 50
+        })
+    }
+    else if (scroll_position < field_top) {
+        $('.sol').css({
+            "top": '-50px'
+        })
+    }
+    else if (scroll_position > field_bottom) {
+        $('.sol').css({
+            "top": '100px'
+        })
+    }
+})

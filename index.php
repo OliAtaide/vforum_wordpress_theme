@@ -35,7 +35,7 @@
         <div class="header-logo col-xl-6 col-xxl-4 col-lg-5 col-md-8 mx-auto text-center">
           <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/logo-vforum.svg" />
         </div>
-        <div class="ondas ondas1">
+        <div class="header-ondas ondas1">
           <img class="onda1" src="<?php echo get_template_directory_uri(); ?>/img/ondas1/onda1.png" alt="">
           <img class="onda2" src="<?php echo get_template_directory_uri(); ?>/img/ondas1/onda2.png" alt="">
           <img class="onda3" src="<?php echo get_template_directory_uri(); ?>/img/ondas1/onda3.png" alt="">
@@ -58,15 +58,22 @@
       </div>
     </div>
   </section>
-  <!-- <section class="bg-blue">
-      <div class="waves">
-      </div>
-    </section> -->
+  <div class="ondas ondas2">
+    <div class="sol rounded-circle d-flex p-5 align-items-center text-uppercase">
+      <h2>A Organização</h2>
+    </div>
+    <img class="onda6" src="<?php echo get_template_directory_uri(); ?>/img/ondas2/onda6.png" alt="">
+    <img class="onda5" src="<?php echo get_template_directory_uri(); ?>/img/ondas2/onda5.png" alt="">
+    <img class="onda4" src="<?php echo get_template_directory_uri(); ?>/img/ondas2/onda4.png" alt="">
+    <img class="onda3" src="<?php echo get_template_directory_uri(); ?>/img/ondas2/onda3.png" alt="">
+    <img class="onda2" src="<?php echo get_template_directory_uri(); ?>/img/ondas2/onda2.png" alt="">
+    <img class="onda1" src="<?php echo get_template_directory_uri(); ?>/img/ondas2/onda1.png" alt="">
+  </div>
   <section class="d-flex align-items-center section-organization">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 organization-wrapper">
-          <h4 class="mb-4">Organização</h4>
+          <!-- <h4 class="mb-4">Organização</h4> -->
           <p>Centro Federal de Educação Tecnológica de Minas Gerais (CEFET-MG)</p>
           <p>Pontifícia Universidade Católica de Minas Gerais (PUC Minas)</p>
         </div>
@@ -283,6 +290,15 @@
       </div>
     </div>
   </section>
+  <div class="ondas ondas3">
+    <img class="onda6" src="<?php echo get_template_directory_uri(); ?>/img/ondas3/onda6.png" alt="">
+    <img class="onda5" src="<?php echo get_template_directory_uri(); ?>/img/ondas3/onda5.png" alt="">
+    <img class="onda4" src="<?php echo get_template_directory_uri(); ?>/img/ondas3/onda4.png" alt="">
+    <img class="onda3" src="<?php echo get_template_directory_uri(); ?>/img/ondas3/onda3.png" alt="">
+    <img class="onda2" src="<?php echo get_template_directory_uri(); ?>/img/ondas3/onda2.png" alt="">
+    <img class="onda1" src="<?php echo get_template_directory_uri(); ?>/img/ondas3/onda1.png" alt="">
+
+  </div>
   <section class="inscricoes">
     <div class="container">
       <div class="section-title">
