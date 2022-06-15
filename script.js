@@ -28,6 +28,8 @@ $(function () {
     });
 });
 
+// Cubos
+
 $(function () {
     $(window).scroll(function () {
         var scroll_position = $(window).scrollTop();
@@ -101,5 +103,75 @@ $(function () {
                 'height': '100%'
             });
         }
+    });
+});
+
+// Ondas
+
+$(function () {
+    $(window).scroll(function () {
+        var scroll_position = $(window).scrollTop();
+        var field_top = 0;
+        var field_bottom = ($(window).height() / 4);
+        console.log(field_bottom);
+        var ib = 180;
+
+        if (scroll_position > field_top && scroll_position < field_bottom) {
+            var object_margin_top = (100 * scroll_position) / field_bottom;
+            $('.header-logo').css({
+                "margin-bottom": object_margin_top * -1
+            })
+        }
+        else if (scroll_position < field_top) {
+            $('.header-logo').css({
+                "margin-bottom": '0'
+            })
+        }
+        else if (scroll_position > field_bottom) {
+            $('.header-logo').css({
+                "margin-bottom": '-100px'
+            })
+        }
+
+        $('.ondas img').each(function (i, onda) {
+            if (scroll_position > field_top && scroll_position < field_bottom) {
+                var object_position_x = (scroll_position - field_top) * ($(this).width() - $(window).width()) / (field_bottom - field_top);
+                var object_position_y = (scroll_position - field_top) * ib / (field_bottom - field_top);
+
+                if (i % 2 == 0) {
+                    $(this).css({
+                        'left': object_position_x * -1,
+                        'bottom': object_position_y
+                    })
+                }
+                else {
+                    $(this).css({
+                        'right': object_position_x * -1,
+                        'bottom': object_position_y
+                    });
+                }
+            }
+            else if (scroll_position < field_top) {
+                $('.onda1, .onda3, .onda5').css({
+                    'left': '0',
+                });
+                $('.onda2, .onda4, .onda6').css({
+                    'right': '0',
+                });
+            }
+            else if (scroll_position > field_bottom) {
+                if (i % 2 == 0) {
+                    $(this).css({
+                        'left': (($(this).width() - $(window).width()) * -1) + 'px'
+                    })
+                }
+                else {
+                    $(this).css({
+                        'right': (($(this).width() - $(window).width()) * -1) + 'px'
+                    });
+                }
+            }
+            ib -= 36;
+        });
     });
 });

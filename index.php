@@ -24,7 +24,7 @@
       </div>
     </div>
   </section>
-  <header class="bg-blue incoming-hero d-flex align-items-center">
+  <header class="bg-blue d-flex align-items-center">
     <div class="container-fluid">
       <div class="row">
         <div class="passaros">
@@ -32,10 +32,16 @@
           <img class="img-fluid passaro-2 d-none d-lg-block" src="<?php echo get_template_directory_uri(); ?>/img/vforum-asset-2.svg" />
           <img class="img-fluid passaro-3 d-none d-lg-block" src="<?php echo get_template_directory_uri(); ?>/img/vforum-asset-3.svg" />
         </div>
-        <div class="col-xl-6 col-xxl-4 col-lg-5 col-md-8 mx-auto text-center">
+        <div class="header-logo col-xl-6 col-xxl-4 col-lg-5 col-md-8 mx-auto text-center">
           <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/logo-vforum.svg" />
         </div>
-        <div class="waves">
+        <div class="ondas ondas1">
+          <img class="onda1" src="<?php echo get_template_directory_uri(); ?>/img/ondas1/onda1.png" alt="">
+          <img class="onda2" src="<?php echo get_template_directory_uri(); ?>/img/ondas1/onda2.png" alt="">
+          <img class="onda3" src="<?php echo get_template_directory_uri(); ?>/img/ondas1/onda3.png" alt="">
+          <img class="onda4" src="<?php echo get_template_directory_uri(); ?>/img/ondas1/onda4.png" alt="">
+          <img class="onda5" src="<?php echo get_template_directory_uri(); ?>/img/ondas1/onda5.png" alt="">
+          <img class="onda6" src="<?php echo get_template_directory_uri(); ?>/img/ondas1/onda6.png" alt="">
         </div>
       </div>
     </div>
@@ -238,10 +244,10 @@
     </div>
   </section>
   <div id="cubes" class="d-flex flex-column">
-        <div id="cube1"></div>
-        <div id="cube2" class="align-self-end"></div>
-        <div id="cube3"></div>
-    </div>
+    <div id="cube1"></div>
+    <div id="cube2" class="align-self-end"></div>
+    <div id="cube3"></div>
+  </div>
   <section class="chamada">
     <div class="container">
       <div class="section-title">
