@@ -1,0 +1,137 @@
+#field {
+    position: relative;
+    height: 660px;
+    width: 100%;
+}
+
+#field .section {
+    position: absolute;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+#object {
+    position: absolute;
+    left: -25%;
+    height: 660px;
+    width: 660px;
+    border-radius: 5px;
+    background: #E75913;
+}
+
+#space {
+    height: 1000px;
+}
+
+.blue {
+    height: 540px;
+    background: #1D4A96;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    min-width: 1440px;
+    min-height: 600px;
+}
+
+.ondas {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.ondas img {
+    position: absolute;
+}
+
+.ondas1 img {
+    bottom: 0;
+}
+
+.ondas2 img {
+    top: 0;
+}
+
+.onda2,
+.onda4,
+.onda6 {
+    right: 0;
+}
+
+#cubes div {
+    height: 120px;
+    width: 0%;
+}
+
+#cubes #cube1 {
+    background-color: #3A98CF;
+}
+
+#cubes #cube2 {
+    background-color: #0181A4;
+    ;
+}
+
+#cubes #cube3 {
+    background-color: #8AD4D8;
+}
+
+#cubes2,
+#cubes3 {
+    height: 170px;
+}
+
+#cubes2 div,
+#cubes3 div {
+    min-height: 50px;
+    width: 100%;
+}
+
+
+#cubes2 #cube1,
+#cubes3 #cube1 {
+    background-color: #73C6C9;
+}
+
+#cubes2 #cube2,
+#cubes3 #cube2 {
+    background-color: #21B4B3;
+}
+
+#cubes2 #cube2,
+#cubes2 #cube4,
+#cubes3 #cube2,
+#cubes3 #cube4 {
+    max-height: 120px;
+}
+
+#cubes2 #cube1,
+#cubes3 #cube3,
+#cubes2 #cube5 {
+    max-height: 70px;
+}
+
+#cubes2 #cube3,
+#cubes3 #cube1,
+#cubes3 #cube5 {
+    max-height: 170px;
+}
+
+#cubes2 #cube3,
+#cubes3 #cube3 {
+    background-color: #2B57A4;
+}
+
+#cubes2 #cube4,
+#cubes3 #cube4 {
+    background-color: #429BD5;
+}
+
+#cubes2 #cube5,
+#cubes3 #cube5 {
+    background-color: #8ED1E7;
+}
