@@ -176,7 +176,6 @@ $(function () {
 });
 
 // Titulo Organizacao
-
 $(window).scroll(function () {
     var scroll_position = $(window).scrollTop();
     var field_top = $('.ondas2').position().top - ($(window).height() / 2);
@@ -202,4 +201,95 @@ $(window).scroll(function () {
             "top": '100px'
         })
     }
+})
+
+
+$(window).scroll(function () {
+    var scroll_position = $(window).scrollTop();
+    var field_top = $('.ondas2').position().top - ($(window).height() / 2);
+    var field_bottom = $('.ondas2').position().top + (340);
+    var ib = 180;
+
+    $('.ondas2 img').each(function (i, onda) {
+        if (scroll_position > field_top && scroll_position < field_bottom) {
+            var object_position_x = (scroll_position - field_top) * ($(this).width() - $(window).width()) / (field_bottom - field_top);
+
+            if (i % 2 == 0) {
+                $(this).css({
+                    'left': object_position_x * -1,
+                })
+            }
+            else {
+                $(this).css({
+                    'right': object_position_x * -1,
+                });
+            }
+        }
+        else if (scroll_position < field_top) {
+            $('.ondas2 .onda1, .ondas2 .onda3, .ondas2 .onda5').css({
+                'left': '0',
+            });
+            $('.ondas2 .onda2, .ondas2 .onda4, .ondas2 .onda6').css({
+                'right': '0',
+            });
+        }
+        else if (scroll_position > field_bottom) {
+            if (i % 2 == 0) {
+                $(this).css({
+                    'left': (($(this).width() - $(window).width()) * -1) + 'px'
+                })
+            }
+            else {
+                $(this).css({
+                    'right': (($(this).width() - $(window).width()) * -1) + 'px'
+                });
+            }
+        }
+        ib -= 36;
+    });
+})
+
+$(window).scroll(function () {
+    var scroll_position = $(window).scrollTop();
+    var field_top = $('.ondas3').position().top - ($(window).height() / 2);
+    var field_bottom = $('.ondas3').position().top + (340);
+    var ib = 180;
+
+    $('.ondas3 img').each(function (i, onda) {
+        if (scroll_position > field_top && scroll_position < field_bottom) {
+            var object_position_x = (scroll_position - field_top) * ($(this).width() - $(window).width()) / (field_bottom - field_top);
+
+            if (i % 2 == 0) {
+                $(this).css({
+                    'left': object_position_x * -1,
+                })
+            }
+            else {
+                $(this).css({
+                    'right': object_position_x * -1,
+                });
+            }
+        }
+        else if (scroll_position < field_top) {
+            $('.ondas3 .onda1, .ondas3 .onda3, .ondas3 .onda5').css({
+                'left': '0',
+            });
+            $('.ondas3 .onda2, .ondas3 .onda4, .ondas3 .onda6').css({
+                'right': '0',
+            });
+        }
+        else if (scroll_position > field_bottom) {
+            if (i % 2 == 0) {
+                $(this).css({
+                    'left': (($(this).width() - $(window).width()) * -1) + 'px'
+                })
+            }
+            else {
+                $(this).css({
+                    'right': (($(this).width() - $(window).width()) * -1) + 'px'
+                });
+            }
+        }
+        ib -= 36;
+    });
 })

@@ -297,7 +297,6 @@
     <img class="onda3" src="<?php echo get_template_directory_uri(); ?>/img/ondas3/onda3.png" alt="">
     <img class="onda2" src="<?php echo get_template_directory_uri(); ?>/img/ondas3/onda2.png" alt="">
     <img class="onda1" src="<?php echo get_template_directory_uri(); ?>/img/ondas3/onda1.png" alt="">
-
   </div>
   <section class="inscricoes">
     <div class="container">
